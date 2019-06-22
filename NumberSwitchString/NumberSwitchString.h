@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NumberSwitchString : NSObject
 +(NSString *)numberSwitchString:(NSInteger )number;
++(NSString *)objSwitchString:(NSObject *)obj;
 + (BOOL)isNumber:(NSString *)strValue;
 +(NSInteger)stringSwitchNumber:(NSString *)numberString;
 @end

@@ -13,6 +13,10 @@
 {
     return [NSString stringWithFormat:@"%ld",number];
 }
++(NSString *)objSwitchString:(NSObject *)obj
+{
+    return [NSString stringWithFormat:@"%@",obj];
+}
 + (BOOL)isNumber:(NSString *)strValue
 {
     if (strValue == nil || [strValue length] <= 0)
