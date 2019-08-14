@@ -37,4 +37,20 @@
 {
     return [numberString integerValue];
 }
++(NSMutableArray *)stringSwitchArray:(NSString *)numberString
+{
+    return [NSMutableArray arrayWithArray:[numberString componentsSeparatedByString:@"-"]];
+}
++(NSMutableString *)arraySwitchString:(NSMutableArray *)stringArray withCharStr:(NSString *)charStr
+{
+    NSMutableString *mutaStr = [NSMutableString string];
+    for (int i = 0; i < stringArray.count; i++) {
+        if ( i == 0) {
+            [mutaStr appendString:stringArray[i]];
+        }else {
+            [mutaStr appendString:[NSString stringWithFormat:@"%@%@",charStr,stringArray[i]]];
+        }
+    }
+    return mutaStr;
+}
 @end

@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 +(NSString *)objSwitchString:(NSObject *)obj;
 + (BOOL)isNumber:(NSString *)strValue;
 +(NSInteger)stringSwitchNumber:(NSString *)numberString;
++(NSMutableArray *)stringSwitchArray:(NSString *)numberString;
++(NSMutableString *)arraySwitchString:(NSMutableArray *)stringArray withCharStr:(NSString *)charStr;
 @end
 
 NS_ASSUME_NONNULL_END
