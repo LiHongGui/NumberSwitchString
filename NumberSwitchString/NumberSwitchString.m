@@ -7,7 +7,8 @@
 //
 
 #import "NumberSwitchString.h"
-
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 @implementation NumberSwitchString
 +(NSString *)numberSwitchString:(NSInteger )number
 {
